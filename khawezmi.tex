@@ -1,0 +1,252 @@
+\documentclass[a4paper,10pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{textcomp}
+\usepackage{array,multirow}
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\newcommand{\KHWARIZMI}{Khawārizmi }
+\theoremstyle{plain}
+\newtheorem{exo}{Exercice}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{hyperref}\hypersetup{pdfstartview=XYZ}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{microtype}
+\usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{url}
+\usepackage[T1]{fontenc}
+\pagestyle{fancy}
+\renewcommand\headrulewidth{1pt}
+\fancyhead[L]{Al-Khawārizmi}
+\fancyhead[R]{univ tln}
+\renewcommand\footrulewidth{1pt}
+\fancyfoot[R]{\today}
+\fancyfoot[L]{Ben Amira}
+\usepackage{hyperref}\hypersetup{colorlinks=true,linkcolor=Brown,pdfstartview=XYZ}
+\title{\textcolor{teal}{AL-\KHWARIZMI Muhammad}}
+\author{\textcolor{darkgray}{Ben Amira Rawia}}
+\date{\today}
+\begin{document}
+\maketitle
+\begin{abstract}
+\fbox{%
+\begin{minipage}{0.75\textwidth}
+Aujourd'hui, parler de l’algèbre c'est parler du rôle joué par le grand mathématicien Al-Khawārizmi, né dans les années 780, probablement à Khiva dans la région du Khwarezm, dans l'actuel Ouzbékistann, mort vers 850 à Bagdad,est un {\color{olive} mathématicien, géographe, astrologue et astronome}   persan, membre de la Maison de la sagesse de Bagdad.\cite{Wiki}
+\end{minipage}
+}
+\end{abstract}
+
+\centerline{\includegraphics[width=7.5cm]{kh.jpg}}
+\tableofcontents
+\section*{Introduction}
+Hormis ses ouvrages astronomiques, le principal ouvrage mathématique de référence est intitulé : « Al Kitāb al mokhtasar fi hisāb al jabr wa-l-moqābala ».
+Ce livre contient plusieurs exemples utiles pour la vie quotidienne tels que le commerce, la topographie et surtout le calcul de l’héritage.
+
+D’autre part, le titre de cet ouvrage contient deux mots très importants qui nous intéressent dans la suite : {\color{olive}al jabr(algebre)} et  {\color{olive}al moqabala(la comparaison)}.
+
+\section{Algebre}
+\subsection{Definition}
+Al-Khawārizmi a utilisé ce terme al jabr pour ajouter aux deux membres d’une équation le même terme afin de n’avoir que des termes à ajouter, plutôt que des soustractions, et pour ne manipuler que des quantités entières.\cite{WinNT}
+\subsection{Exemple}
+\[
+4x^2 - 5x + 1 = x^2 + \frac{1}{2} x
+\]
+\[
+4x^2 - 5x + 1 {\color{magenta}+5x} = x^2 + \frac{1}{2} x {\color{magenta}+5x}
+\]
+\[
+4x^2  + 1 = x^2 + \frac{11}{2} x
+\]
+\[
+ {\color{magenta}2  ( }4x^2  + 1 = x^2 + \frac{11}{2} x  {\color{magenta} ) }
+\]
+\[
+8x^2  + 1 = 2x^2 + 11x
+\]
+\section{Comparaison}
+\subsection{Definition}
+Le mot Al moqābala signifie la comparaison : il s’agit tout simplement de regrouper les quantités de même espèce.
+Poursuivons l’exemple précédent
+\subsection{exemple}
+\[
+8x^2  + 1 = 2x^2 + 11x
+\]
+\[
+8x^2   {\color{magenta} - 2x^2} + 2 = 2x^2 + 11x  {\color{magenta} - 2x^2}
+\]
+\[
+6x^2  + 2 =  11x
+\]
+\section{Equations canoniques}
+Grâce à la restauration et à la comparaison, Al Khawārizmi a classifié les équations en six types « équations canoniques », que nous écrivons en langage moderne sous la forme:\cite{WinNT}
+
+
+
+\begin{tabular}{|c|l|l|}
+\hline
+ {\color{magenta}Types d'equations} &  {\color{magenta}selon Al Khawarizmi} &  {\color{magenta}Langage moderne}\\
+\hline 
+\multirow {3}*{simples} & Carrés égaux à un nombre. & $ax^2 = bx $  \\ 
+\cline{2-3}& Carrés égaux aux racines. & $ax^2 = c $  \\
+\cline{2-3} &Racines égales à un nombre. & $ bx = c $  \\
+\hline
+\multirow {3}*{composées} & Carrés et racines  égaux à un nombre. & $ax^2 + bx = c $  \\ 
+\cline{2-3}& Carrés et nombre égaux aux racines. & $ ax^2 + c = bx $  \\
+\cline{2-3} &Carrés égaux aux racines et nombre. & $ ax^2 = bx + c $  \\
+\hline
+
+\end{tabular}
+
+
+\subsection{exemples}
+\subsubsection{resolution equation type  $ ax^2 = bx + c$}
+\centerline{\includegraphics[width=7.5cm]{equation.png}}
+
+Le nombre $x^2$ est appelé « Al-māl » (c’est-à-dire « le bien » au sens de fortune).
+
+Le nombre x est appelé « al-jidhr »  (c’est-à-dire « la racine »)
+
+La constante est appelée « 'adad » (le « nombre »)
+
+Qui se traduit par l’égalité : $3x+4=x^2.$
+
+On construit un carré ABCD de côté x (l’inconnue que nous cherchons) partagé en deux rectangles CDEF, d’aire 4, et ABFE de dimensions x et 3.
+
+On prend G, milieu de [BF] et on construit le carré FGPO à l’intérieur du carré ABCD.
+
+On construit un nouveau carré CGQM tel que MN=ON (il s’ensuit que les rectangles DENM et OPQN sont de même aire).
+\[
+\mathcal{A}ire(CGQM) = 4 +  \frac{9}{4} =  \frac{25}{4}
+\]
+On en déduit que x=4.
+
+\centerline{\includegraphics[width=7.5cm]{canonique.png}}
+
+\subsubsection*{Résolution algébrique de ce problème}
+
+Il s’agit de trouver $x$ tel que $x^2=3x+4$.
+
+Cette équation est équivalente  :$ x^2-3x-4=0$.
+
+Or $x2-3x-4=(x-\frac{3}{2})^2-(\frac{3}{2})^2-4=(x-\frac{3}{2})^2-\frac{25}{4}$.
+
+Ainsi $x^2=3x+4 \iff (x-\frac{3}{2})^2-\frac{25}{4}=0 \iff x-\frac{3}{3}=\frac{5}{2}$
+
+On en déduit que x=4.
+
+\subsubsection{resolution equation type $x^2 + bx = c$}
+
+\centerline{\includegraphics[width=7.5cm]{eq.png}}
+
+\subsubsection*{interpretation mathematique }
+
+calcule c :
+\[
+  (\frac{b}{2})^2
+\]
+soustraire c :
+\[
+ (\frac{b}{2})^2 - c
+\]
+prends sa racine carrée :
+\[
+ \sqrt{ (\frac{b}{2})^2 - c}
+\]
+prends sa racine carrée :
+\[
+x= \sqrt{ (\frac{b}{2})^2 - c}+\frac{b}{2}
+\]
+si 
+ $ (\frac{b}{2})^2 = c$
+alors$  x = \frac{b}{2}  si < c $ alors pas de solution 
+
+\begin{exo}
+
+Résoudre, en utilisant la méthode d'Al-\KHWARIZMI, les équations suivantes:
+\begin{enumerate}
+\item $x^2 + 12x = 45$
+\item $x^2 + 2x = 2$
+\item $x^2 + 8x = \frac{5}{4}$
+\end{enumerate}
+\end{exo}
+
+
+\section{L'avènement d'un nouveau concept : l'algorithme }
+
+La démarche méthodique et la puissance de ses calculs, par l'usage des chiffres arabes, valut à Al-\KHWARIZMI de voir son nom utilisé dès le 12è siècle en Occident : algorismo en espagnol, algorisme en français), mot formé sur son nom et sur le mot grec arithmos , signifiant nombre et qui a donné arithmétique = science du calcul. Les algorithmistes ou algoristes, calculant avec les chiffres arabes, s'opposèrent alors aux abacistes : ceux qui utilisaient les abaques (bouliers qu'utilisaient les grecs de l'Antiquité).\cite{livre}
+
+
+\subsubsection*{definition algorithme}
+
+En mathématique et en informatique, l'algorithme peut se définir comme étant :
+"L'ensemble des règles et d'instructions à suivre, effectivement exécutables, permettant d'obtenir
+un résultat clairement défini en un nombre fini d'étapes"
+
+\subsubsection*{exemple d algorithme : calcul du pgcd et inverse}
+
+pour rappel le pgcd est le plus grand commun diviseur. une des methodes pour le calculer est celle d'euclide.
+le code python si dessous permet de calculer le pgcd avec la methode d'euclide :
+
+\begin{lstlisting}
+def pgcd(a,b):
+        while b!=0:
+                a,b=b,a%b
+        return a
+\end{lstlisting}
+
+le code python ci-dessous euclide etendu permet de caluculer l'inverse :
+
+\begin{lstlisting}
+def euclide_e(a,n):
+    u1=1
+    v1=0
+    u=0
+    v=1
+    while b != 0:
+        r = a % b
+        q = a // b
+        a = b
+        b = r
+        aux1 = u1-q*u
+        aux2 = v1-q*v
+        u1=u
+        v1=v
+        u=aux1
+        v=aux2
+     return [u1,v1,a]
+\end{lstlisting}
+\section{conclusion}
+Tout au long de ce travail, le lecteur peut remarquer la différence du style, de la méthode et de l’évolution du concept de l’algorithme au fil des siècles. Certains algorithmes nous paraissent actuellement banals comme pour la résolution des équations du type (Ti), avec i=1,2,3 mais cela n’a pas été le cas à cette époque où il n'était pas aisé de concevoir la division par des nombres du type (m+1n, m et n étant entiers, ou tout simplement par une fraction.
+
+Il semblerait que la poésie didactique ait été utilisée uniquement dans la civilisation musulmane. Elle illustre un des apports de la civilisation arabo-musulmane et son autonomie par rapport à la science grecque ou aux savoirs persans et indiens.\cite{WinNT}
+\section{Les recherches trigonométriques }
+
+
+En trigonométrie, dans le cadre de calculs astronomiques relatifs à la position des astres du système solaire, il est coutume d'attribuer à Al-\KHWARIZMI, dans un traité écrit à Bagdad, la volonté d'asseoir l'utilisation systématique de la demi-corde, équivalente à notre sinus dans un cercle de rayon 1, en remplacement des cordes de Ptolémée. Selon P. Youschkevitch, son ouvrage ne fut connu que vers l'an 1000 et sans doute complété par Abu Al Qasim Maslama, un astronome installé à Cordoue (Espagne).\cite{livr}
+
+\section{Autres centres d'interets}
+\subsection{Astronomie}
+ Al-\KHWARIZMI a également fait un traité d'astronomie. Seules les deux versions latines sont conservées. Dans ce traité, on pourrait visualiser études des calendriers et des positions réelles du Soleil, de la Lune et des planètes. Des tableaux de sinus et de tangentes ont été appliqués à l'astronomie sphérique. On retrouve également dans ce traité des tableaux astrologiques, des calculs de parallaxe et d'éclipses et de visibilité de la lune.
+
+Il se consacre également en partie à la géographie, où il réalise une œuvre intitulée Kitab Surat-al-Ard. Dans cet ouvrage, vous pouvez voir comment il corrige Ptolémée dans tout ce qui concerne l'Afrique et l'Orient. Il a dressé une liste des latitudes et des longitudes des villes, des montagnes, des rivières, des îles, des différentes régions géographiques et même des mers. Ces données ont été utilisées comme base pour créer une carte du monde qui était alors connue
+
+\centerline{\includegraphics[width=7.5cm]{al.jpg}}
+
+\subsection{Histoire et géographie}
+Son Traité de Géographie est inspiré de celui de Ptolémée, enrichi par les rapports des marchands arabes en ce qui concerne le monde islamique. Il y donne la longitude et latitude de points remarquables du monde connu (villes, montagnes, îles, etc.) Il aurait aussi écrit une chronique historique de son époque, qui ne nous est connue que par les références qu'y font des historiens plus récents.\cite{liv}
+
+\centerline{\includegraphics[width=7.5cm]{image.jpg}}
+
+
+\bibliographystyle{plain}
+\bibliography{bib}
+
+\end{document}
